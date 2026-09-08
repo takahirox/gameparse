@@ -1,0 +1,22 @@
+{
+  "name": "gameparse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "gameparse": "src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "node --test test/browser.integration.mjs",
+    "experiment": "node src/cli.mjs experiment",
+    "serve": "node src/cli.mjs serve"
+  },
+  "dependencies": {
+    "playwright": "1.58.2",
+    "pngjs": "7.0.0"
+  }
+}

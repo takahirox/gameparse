@@ -1,0 +1,185 @@
+{
+  "condition": "controlled-clock-image-only-v1",
+  "tolerances": {
+    "rms": 0.02,
+    "maximum": 0.05,
+    "eventMs": 50,
+    "maxGapMs": 50,
+    "repetitions": 5,
+    "minPassing": 4
+  },
+  "clock": {
+    "kind": "controlled",
+    "stepMs": 16,
+    "wallGates": "Not applicable; this is a separate intervention condition"
+  },
+  "recorded": [
+    {
+      "id": "move-forward",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "w"
+        },
+        {
+          "at": 480,
+          "type": "up",
+          "key": "w"
+        }
+      ]
+    },
+    {
+      "id": "move-right",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "d"
+        },
+        {
+          "at": 640,
+          "type": "up",
+          "key": "d"
+        }
+      ]
+    },
+    {
+      "id": "aim-horizontal",
+      "behavior": "aiming",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "mouse",
+          "dx": 40,
+          "dy": 0
+        }
+      ]
+    },
+    {
+      "id": "aim-vertical",
+      "behavior": "aiming",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "mouse",
+          "dx": 0,
+          "dy": 32
+        }
+      ]
+    },
+    {
+      "id": "jump-short",
+      "behavior": "jumping",
+      "duration": 1440,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "Space"
+        },
+        {
+          "at": 192,
+          "type": "up",
+          "key": "Space"
+        }
+      ]
+    },
+    {
+      "id": "jump-long",
+      "behavior": "jumping",
+      "duration": 1440,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "Space"
+        },
+        {
+          "at": 320,
+          "type": "up",
+          "key": "Space"
+        }
+      ]
+    },
+    {
+      "id": "move-diagonal",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "w"
+        },
+        {
+          "at": 160,
+          "type": "down",
+          "key": "d"
+        },
+        {
+          "at": 480,
+          "type": "up",
+          "key": "w"
+        },
+        {
+          "at": 480,
+          "type": "up",
+          "key": "d"
+        }
+      ]
+    }
+  ],
+  "finalRanges": {
+    "movementHoldMs": [
+      192,
+      224,
+      352,
+      416
+    ],
+    "mousePixels": [
+      -36,
+      -28,
+      20,
+      52
+    ],
+    "jumpHoldMs": [
+      48,
+      80,
+      112,
+      192
+    ]
+  },
+  "excludedCaseIdentities": [
+    "{\"duration\":960,\"events\":[{\"at\":160,\"type\":\"down\",\"key\":\"w\"},{\"at\":384,\"type\":\"up\",\"key\":\"w\"}]}",
+    "{\"duration\":960,\"events\":[{\"at\":160,\"type\":\"mouse\",\"dx\":-36,\"dy\":0},{\"at\":384,\"type\":\"mouse\",\"dx\":-36,\"dy\":0}]}",
+    "{\"duration\":1440,\"events\":[{\"at\":160,\"type\":\"down\",\"key\":\"Space\"},{\"at\":208,\"type\":\"up\",\"key\":\"Space\"}]}",
+    "{\"duration\":960,\"events\":[{\"at\":160,\"type\":\"down\",\"key\":\"w\"},{\"at\":160,\"type\":\"down\",\"key\":\"a\"},{\"at\":384,\"type\":\"up\",\"key\":\"w\"},{\"at\":384,\"type\":\"up\",\"key\":\"a\"}]}",
+    "{\"duration\":960,\"events\":[{\"at\":160,\"type\":\"down\",\"key\":\"w\"},{\"at\":256,\"type\":\"mouse\",\"dx\":-36,\"dy\":0},{\"at\":384,\"type\":\"up\",\"key\":\"w\"}]}"
+  ],
+  "finalFamilies": [
+    "unseen hold duration",
+    "unseen mouse-input temporal spacing",
+    "unseen jump hold duration",
+    "forward-left combination",
+    "forward plus aiming"
+  ],
+  "repetitions": 5,
+  "attemptCap": 7,
+  "referenceReuse": "The five reference stability captures are paired by index with five candidate captures",
+  "appearance": "Descriptive separate assessment; colors and landmark identities supplied; background/grid intentionally substituted",
+  "unknowns": [
+    "movement rate",
+    "mouse response",
+    "jump impulse",
+    "vertical acceleration",
+    "simultaneous-input normalization",
+    "unobserved actions"
+  ]
+}

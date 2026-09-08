@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "condition": "controlled-clock-image-only-v1",
+  "requirements": {
+    "condition": "controlled-clock-image-only-v1",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "camera": {
+      "height": 1.6,
+      "focalPixels": 620,
+      "initialPosition": [
+        0,
+        1.6,
+        0
+      ],
+      "initialYaw": 0,
+      "initialPitch": 0
+    },
+    "landmarks": [
+      {
+        "id": "cyan",
+        "position": [
+          -4,
+          1,
+          16
+        ],
+        "rgb": [
+          0,
+          255,
+          255
+        ]
+      },
+      {
+        "id": "magenta",
+        "position": [
+          4,
+          2.8,
+          18
+        ],
+        "rgb": [
+          255,
+          0,
+          255
+        ]
+      },
+      {
+        "id": "yellow",
+        "position": [
+          0,
+          4,
+          22
+        ],
+        "rgb": [
+          255,
+          255,
+          0
+        ]
+      },
+      {
+        "id": "orange",
+        "position": [
+          -2,
+          5,
+          20
+        ],
+        "rgb": [
+          255,
+          128,
+          0
+        ]
+      }
+    ],
+    "controls": {
+      "forward": "w",
+      "backward": "s",
+      "left": "a",
+      "right": "d",
+      "jump": "Space",
+      "reset": "r",
+      "aim": "drag with left mouse button; optional double-click pointer lock for manual play"
+    },
+    "suppliedFacts": [
+      "viewport",
+      "camera projection and initial pose",
+      "landmark geometry and colors",
+      "control bindings",
+      "flat ground"
+    ],
+    "unknowns": [
+      "movement rate",
+      "mouse response",
+      "jump impulse",
+      "vertical acceleration",
+      "simultaneous-input normalization",
+      "unobserved actions"
+    ]
+  },
+  "parameters": {
+    "movementRate": 3.246528518098055,
+    "mouseRadiansPerPixel": 0.002440657748335767,
+    "jumpImpulse": 5.358457889945452,
+    "gravity": 10.791179402128584
+  },
+  "claims": [
+    {
+      "id": "movementRate",
+      "category": "inference",
+      "value": 3.246528518098055,
+      "units": "supplied-scene units/s",
+      "evidence": [
+        "move-forward",
+        "move-right",
+        "move-diagonal"
+      ],
+      "method": "Endpoint displacement over held-input interval",
+      "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+      "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+      "observedEstimateRange": [
+        3.1970493292036264,
+        3.307414687156809
+      ],
+      "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+    },
+    {
+      "id": "mouseRadiansPerPixel",
+      "category": "inference",
+      "value": 0.002440657748335767,
+      "units": "rad/input pixel",
+      "evidence": [
+        "aim-horizontal",
+        "aim-vertical"
+      ],
+      "method": "Fitted view rotation divided by recorded relative mouse input",
+      "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+      "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+      "observedEstimateRange": [
+        0.0024109206909020543,
+        0.0024703948057694805
+      ],
+      "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+    },
+    {
+      "id": "jumpImpulse",
+      "category": "inference",
+      "value": 5.358457889945452,
+      "units": "supplied-scene units/s",
+      "evidence": [
+        "jump-short",
+        "jump-long"
+      ],
+      "method": "Quadratic least-squares fit to image-estimated vertical displacement",
+      "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+      "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+      "observedEstimateRange": [
+        5.358457889945452,
+        5.358457889945452
+      ],
+      "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+    },
+    {
+      "id": "gravity",
+      "category": "inference",
+      "value": 10.791179402128584,
+      "units": "supplied-scene units/s²",
+      "evidence": [
+        "jump-short",
+        "jump-long"
+      ],
+      "method": "Quadratic least-squares fit to image-estimated vertical displacement",
+      "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+      "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+      "observedEstimateRange": [
+        10.791179402128584,
+        10.791179402128584
+      ],
+      "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+    },
+    {
+      "id": "diagonalNormalization",
+      "category": "inference",
+      "value": true,
+      "evidence": [
+        "move-diagonal",
+        "move-forward",
+        "move-right",
+        "move-diagonal"
+      ],
+      "method": "Compare diagonal and single-axis image-estimated displacement rates; require spread within 10%",
+      "conditions": "Observed planar directions and durations",
+      "limitations": "Does not establish arbitrary air-control or collision behavior"
+    }
+  ],
+  "unknowns": [
+    "collision response",
+    "air control outside tested paths",
+    "pitch clamp",
+    "jump buffering",
+    "multiplayer",
+    "absolute scale without supplied geometry"
+  ],
+  "generatorRequirements": "Implement the inferred constant-rate planar movement, relative aiming, and ballistic jump model. Preserve supplied camera and landmark correspondences. Record every unobserved choice."
+}

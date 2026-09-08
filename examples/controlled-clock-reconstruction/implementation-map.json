@@ -1,0 +1,31 @@
+{
+  "claims": [
+    {
+      "specificationId": "movementRate",
+      "implementation": "game.mjs"
+    },
+    {
+      "specificationId": "mouseRadiansPerPixel",
+      "implementation": "game.mjs"
+    },
+    {
+      "specificationId": "jumpImpulse",
+      "implementation": "game.mjs"
+    },
+    {
+      "specificationId": "gravity",
+      "implementation": "game.mjs"
+    },
+    {
+      "specificationId": "diagonalNormalization",
+      "implementation": "game.mjs"
+    }
+  ],
+  "generatorAdditions": [
+    "background/grid/crosshair styling",
+    "pitch clamp ±1 rad",
+    "repeat jumping while held",
+    "flat ground, no collision geometry"
+  ],
+  "modelFamily": "Constant-rate movement, relative mouse rotation, ballistic jump; not arbitrary game synthesis"
+}
