@@ -1,0 +1,33 @@
+{
+  "role": "generate",
+  "image": "sha256:e67514e5d0f6c46656005e1b693b2ec9d52e80b641307de684d4a015ba7a4eaf",
+  "inputManifest": {
+    "specification.json": "816c3a7c6bef571fcf2266074b5a732ca4bd659ddf62b0807a67b1b98eed7b80"
+  },
+  "toolManifest": {
+    "generate.mjs": "fabe16d75e0091294ee181080d50d1b7170765808fd203d98e42b628456b30fa",
+    "probe.mjs": "8daf397967342041351d2d37016a28af39f25fa68922d15c460804dac0c73f97"
+  },
+  "policy": {
+    "network": "none",
+    "readOnlyRoot": true,
+    "capabilities": "none",
+    "mounts": [
+      "input:ro",
+      "tool:ro",
+      "output:rw"
+    ],
+    "history": "none"
+  },
+  "cleanup": true,
+  "stdout": "",
+  "stderr": "",
+  "outputManifest": {
+    "boundary-probe.json": "d760c11a1c7a5420071cd7f26abb7a5ae1dab74f536b695ba30c20d24c064240",
+    "game.mjs": "401b0f924303845bdc31ffcf5b9720c89deb6f3dcf6133f8b61cdf25eecdd339",
+    "implementation-map.json": "23a2261ffc45ff24def421a86799b67679a3ebeb933cb5167a243c6029f66e30",
+    "index.html": "c384582089c9fcb8c2015b9ebc2e38925297b240bb62106f6d968a8699f6d5a5",
+    "requirements.json": "f708a7c04e8aac24bc6ad2b5bba58959ff6df2a316567da9451d5783aa946c31"
+  },
+  "success": true
+}

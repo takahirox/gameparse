@@ -1,0 +1,108 @@
+{
+  "seed": 1269866648,
+  "cases": [
+    {
+      "id": "held-movement",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "w"
+        },
+        {
+          "at": 352,
+          "type": "up",
+          "key": "w"
+        }
+      ]
+    },
+    {
+      "id": "held-aim",
+      "behavior": "aiming",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "mouse",
+          "dx": -36,
+          "dy": 0
+        },
+        {
+          "at": 512,
+          "type": "mouse",
+          "dx": -36,
+          "dy": 0
+        }
+      ]
+    },
+    {
+      "id": "held-jump",
+      "behavior": "jumping",
+      "duration": 1440,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "Space"
+        },
+        {
+          "at": 272,
+          "type": "up",
+          "key": "Space"
+        }
+      ]
+    },
+    {
+      "id": "held-diagonal",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "w"
+        },
+        {
+          "at": 160,
+          "type": "down",
+          "key": "a"
+        },
+        {
+          "at": 352,
+          "type": "up",
+          "key": "w"
+        },
+        {
+          "at": 352,
+          "type": "up",
+          "key": "a"
+        }
+      ]
+    },
+    {
+      "id": "held-move-aim",
+      "behavior": "movement",
+      "duration": 960,
+      "events": [
+        {
+          "at": 160,
+          "type": "down",
+          "key": "w"
+        },
+        {
+          "at": 256,
+          "type": "mouse",
+          "dx": 20,
+          "dy": 0
+        },
+        {
+          "at": 352,
+          "type": "up",
+          "key": "w"
+        }
+      ]
+    }
+  ]
+}

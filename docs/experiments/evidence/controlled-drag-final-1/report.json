@@ -1,0 +1,1903 @@
+{
+  "id": "controlled-drag-final-1",
+  "condition": "controlled-clock-image-only-v1",
+  "completion": "complete",
+  "validity": "valid",
+  "reconstruction": "success",
+  "results": [
+    {
+      "group": "recorded",
+      "scenario": "move-forward",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-forward/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0001606777518002989,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0001606777518002989,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0001606777518002989,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0001606777518002989,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0001606777518002989,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "move-right",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-right/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0004184505443828009,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004184505443828009,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004184505443828009,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004184505443828009,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004184505443828009,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "aim-horizontal",
+      "behavior": "aiming",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/aim-horizontal/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0009356838624617336,
+          "maximum": 0.0015625,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009356838624617336,
+          "maximum": 0.0015625,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009356838624617336,
+          "maximum": 0.0015625,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009356838624617336,
+          "maximum": 0.0015625,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009356838624617336,
+          "maximum": 0.0015625,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "aim-vertical",
+      "behavior": "aiming",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/aim-vertical/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0016634379777097509,
+          "maximum": 0.002777777777777778,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0016634379777097509,
+          "maximum": 0.002777777777777778,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0016634379777097509,
+          "maximum": 0.002777777777777778,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0016634379777097509,
+          "maximum": 0.002777777777777778,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0016634379777097509,
+          "maximum": 0.002777777777777778,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "jump-short",
+      "behavior": "jumping",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/jump-short/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "jump-long",
+      "behavior": "jumping",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/jump-long/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "recorded",
+      "scenario": "move-diagonal",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/recorded/move-diagonal/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.00034288149411443547,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00034288149411443547,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00034288149411443547,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00034288149411443547,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00034288149411443547,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "final-held-out",
+      "scenario": "held-movement",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-movement/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.00010201582784980573,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00010201582784980573,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00010201582784980573,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00010201582784980573,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.00010201582784980573,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "final-held-out",
+      "scenario": "held-aim",
+      "behavior": "aiming",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-aim/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0017048971360069647,
+          "maximum": 0.00234375,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0017048971360069647,
+          "maximum": 0.00234375,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0017048971360069647,
+          "maximum": 0.00234375,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0017048971360069647,
+          "maximum": 0.00234375,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0017048971360069647,
+          "maximum": 0.00234375,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "final-held-out",
+      "scenario": "held-jump",
+      "behavior": "jumping",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-jump/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 0,
+            "airtime": 0
+          },
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        },
+        {
+          "rms": 0.0009575023825788363,
+          "maximum": 0.002777777777777778,
+          "points": 364,
+          "eventErrors": {
+            "departure": 0,
+            "landing": 16,
+            "airtime": 16
+          },
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "final-held-out",
+      "scenario": "held-diagonal",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-diagonal/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0004583896047175535,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004583896047175535,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004583896047175535,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004583896047175535,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004583896047175535,
+          "maximum": 0.00078125,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    },
+    {
+      "group": "final-held-out",
+      "scenario": "held-move-aim",
+      "behavior": "movement",
+      "attempts": [
+        {
+          "kind": "reference",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/reference-1"
+        },
+        {
+          "kind": "reference",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/reference-2"
+        },
+        {
+          "kind": "reference",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/reference-3"
+        },
+        {
+          "kind": "reference",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/reference-4"
+        },
+        {
+          "kind": "reference",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/reference-5"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 1,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/candidate-1"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 2,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/candidate-2"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 3,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/candidate-3"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 4,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/candidate-4"
+        },
+        {
+          "kind": "candidate",
+          "attempt": 5,
+          "valid": true,
+          "path": "evaluation/final-held-out/held-move-aim/candidate-5"
+        }
+      ],
+      "stability": [
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0,
+          "maximum": 0,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "pairs": [
+        {
+          "rms": 0.0004904485553902065,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004904485553902065,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004904485553902065,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004904485553902065,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        },
+        {
+          "rms": 0.0004904485553902065,
+          "maximum": 0.001388888888888889,
+          "points": 244,
+          "decision": "success"
+        }
+      ],
+      "decision": "success"
+    }
+  ],
+  "cleanup": true,
+  "limitations": [
+    "Controlled browser clock; no real-time latency claim",
+    "Known supplied camera and landmark geometry",
+    "Deterministic model-based analyzer/generator, not a general game agent",
+    "No claim about unobserved collisions, networking, or arbitrary game engines"
+  ],
+  "finalCasesConsumed": true,
+  "freeze": "f5f3fe4585b80cce844ed95f590beefa73430c7bc875770602c67d60d67cc199",
+  "evaluationManifest": "8b37c1988a24e5121250e8a5d5e235bc649d56688b0045406e7fb9bdf886fe21",
+  "appearance": "Substitute background/grid; landmark colors and geometry supplied for measurement. No fidelity score claimed.",
+  "specification": {
+    "schemaVersion": 1,
+    "condition": "controlled-clock-image-only-v1",
+    "requirements": {
+      "condition": "controlled-clock-image-only-v1",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "camera": {
+        "height": 1.6,
+        "focalPixels": 620,
+        "initialPosition": [
+          0,
+          1.6,
+          0
+        ],
+        "initialYaw": 0,
+        "initialPitch": 0
+      },
+      "landmarks": [
+        {
+          "id": "cyan",
+          "position": [
+            -4,
+            1,
+            16
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "magenta",
+          "position": [
+            4,
+            2.8,
+            18
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ]
+        },
+        {
+          "id": "yellow",
+          "position": [
+            0,
+            4,
+            22
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ]
+        },
+        {
+          "id": "orange",
+          "position": [
+            -2,
+            5,
+            20
+          ],
+          "rgb": [
+            255,
+            128,
+            0
+          ]
+        }
+      ],
+      "controls": {
+        "forward": "w",
+        "backward": "s",
+        "left": "a",
+        "right": "d",
+        "jump": "Space",
+        "reset": "r",
+        "aim": "drag with left mouse button; optional double-click pointer lock for manual play"
+      },
+      "suppliedFacts": [
+        "viewport",
+        "camera projection and initial pose",
+        "landmark geometry and colors",
+        "control bindings",
+        "flat ground"
+      ],
+      "unknowns": [
+        "movement rate",
+        "mouse response",
+        "jump impulse",
+        "vertical acceleration",
+        "simultaneous-input normalization",
+        "unobserved actions"
+      ]
+    },
+    "parameters": {
+      "movementRate": 3.246528518098055,
+      "mouseRadiansPerPixel": 0.002440657748335767,
+      "jumpImpulse": 5.358457889945452,
+      "gravity": 10.791179402128584
+    },
+    "claims": [
+      {
+        "id": "movementRate",
+        "category": "inference",
+        "value": 3.246528518098055,
+        "units": "supplied-scene units/s",
+        "evidence": [
+          "move-forward",
+          "move-right",
+          "move-diagonal"
+        ],
+        "method": "Endpoint displacement over held-input interval",
+        "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+        "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+        "observedEstimateRange": [
+          3.1970493292036264,
+          3.307414687156809
+        ],
+        "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+      },
+      {
+        "id": "mouseRadiansPerPixel",
+        "category": "inference",
+        "value": 0.002440657748335767,
+        "units": "rad/input pixel",
+        "evidence": [
+          "aim-horizontal",
+          "aim-vertical"
+        ],
+        "method": "Fitted view rotation divided by recorded relative mouse input",
+        "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+        "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+        "observedEstimateRange": [
+          0.0024109206909020543,
+          0.0024703948057694805
+        ],
+        "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+      },
+      {
+        "id": "jumpImpulse",
+        "category": "inference",
+        "value": 5.358457889945452,
+        "units": "supplied-scene units/s",
+        "evidence": [
+          "jump-short",
+          "jump-long"
+        ],
+        "method": "Quadratic least-squares fit to image-estimated vertical displacement",
+        "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+        "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+        "observedEstimateRange": [
+          5.358457889945452,
+          5.358457889945452
+        ],
+        "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+      },
+      {
+        "id": "gravity",
+        "category": "inference",
+        "value": 10.791179402128584,
+        "units": "supplied-scene units/s²",
+        "evidence": [
+          "jump-short",
+          "jump-long"
+        ],
+        "method": "Quadratic least-squares fit to image-estimated vertical displacement",
+        "conditions": "Known supplied camera/landmark geometry; controlled browser clock; local flat scene",
+        "limitations": "Model family is an analyzer hypothesis; pixel quantization and pose fit introduce uncertainty; no claims about unseen mechanics",
+        "observedEstimateRange": [
+          10.791179402128584,
+          10.791179402128584
+        ],
+        "uncertainty": "Range across captured scenarios, not a statistical confidence interval"
+      },
+      {
+        "id": "diagonalNormalization",
+        "category": "inference",
+        "value": true,
+        "evidence": [
+          "move-diagonal",
+          "move-forward",
+          "move-right",
+          "move-diagonal"
+        ],
+        "method": "Compare diagonal and single-axis image-estimated displacement rates; require spread within 10%",
+        "conditions": "Observed planar directions and durations",
+        "limitations": "Does not establish arbitrary air-control or collision behavior"
+      }
+    ],
+    "unknowns": [
+      "collision response",
+      "air control outside tested paths",
+      "pitch clamp",
+      "jump buffering",
+      "multiplayer",
+      "absolute scale without supplied geometry"
+    ],
+    "generatorRequirements": "Implement the inferred constant-rate planar movement, relative aiming, and ballistic jump model. Preserve supplied camera and landmark correspondences. Record every unobserved choice."
+  },
+  "implementation": {
+    "claims": [
+      {
+        "specificationId": "movementRate",
+        "implementation": "game.mjs"
+      },
+      {
+        "specificationId": "mouseRadiansPerPixel",
+        "implementation": "game.mjs"
+      },
+      {
+        "specificationId": "jumpImpulse",
+        "implementation": "game.mjs"
+      },
+      {
+        "specificationId": "gravity",
+        "implementation": "game.mjs"
+      },
+      {
+        "specificationId": "diagonalNormalization",
+        "implementation": "game.mjs"
+      }
+    ],
+    "generatorAdditions": [
+      "background/grid/crosshair styling",
+      "pitch clamp ±1 rad",
+      "repeat jumping while held",
+      "flat ground, no collision geometry"
+    ],
+    "modelFamily": "Constant-rate movement, relative mouse rotation, ballistic jump; not arbitrary game synthesis"
+  },
+  "cleanupErrors": []
+}

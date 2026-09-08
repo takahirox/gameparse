@@ -21,6 +21,11 @@ npm run serve
 
 ```sh
 node src/cli.mjs smoke --id my-capture-check
+# On a fresh clone, import the published consumed-case history first:
+for run in controlled-drag-development-1 controlled-drag-final-1; do
+  mkdir -p "artifacts/$run"
+  cp -n "docs/experiments/evidence/$run/private-final.json" "artifacts/$run/private-final.json"
+done
 node src/cli.mjs experiment --id my-experiment
 node src/cli.mjs serve --dir artifacts/my-experiment/reconstruction
 ```
@@ -42,6 +47,13 @@ the current GitHub credential cannot add workflows.
 - [Preregistration template](docs/templates/preregistration.md)
 - [Experiment report template](docs/templates/experiment-report.md)
 - [Controlled-clock condition and limitations](docs/experiments/controlled-clock.md)
+- [First experiment results and evidence](docs/experiments/first-result.md)
+
+To try the committed reconstruction without rerunning the experiment:
+
+```sh
+node src/cli.mjs serve --dir examples/controlled-clock-reconstruction
+```
 
 Implementations must satisfy the protocol's isolation and evaluation gates
 before their results can be counted as an experiment under this contract.
