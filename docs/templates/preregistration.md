@@ -13,12 +13,15 @@ Status: DRAFT — all placeholders must be resolved before scored runs.
 - Recorded/final movement, aiming, jumping and combination coverage:
 - Landmark IDs/correspondence/visibility schedules and calibration evidence:
 - Event detector definition, version, calibration and uncertainty:
+- Observation windows and absent candidate/reference event classification:
 - Required metrics per scenario, units, aggregation and tolerances:
 - Clock alignment, sampling, quality gates and overhead measurement:
 - Repetition count, pass rule, attempt cap and retry eligibility:
+- Reference-only repeatability gate and private evaluation procedure:
 - Policy for missing observations, ambiguity and pipeline failure:
 - Appearance assessment method and separate reporting:
 - Unknowns, additions and identifiable parameter claims:
+- Required recovered behaviors and evidence-backed specification coverage gate:
 - Models/settings, tools, dependency versions and usage-limit stop policy:
 - Immutable artifact store and sanitized public/private access policy:
 - Cleanup and cancellation procedure:

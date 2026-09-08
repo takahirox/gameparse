@@ -34,6 +34,12 @@ Separate three decisions:
    experiment may fail or be inconclusive. No weighted average can hide a failed
    behavior or missing scenario.
 
+Success also requires an evidence-backed exported specification for each required
+behavior and a trace from the implementation to those specification items. A
+supplied requirement or unsupported generator addition cannot establish recovered
+behavior, even when its observable score passes. Rendering/scaffolding defaults
+may be supplied or added, but identify them separately from recovered behavior.
+
 Report completion, validity, and success separately. Capture failures are not
 game failures; missing evidence is not a passing score. Appearance, evidence
 quality, unknowns, and unsupported additions each receive their own findings.
@@ -154,7 +160,25 @@ for this event metric; combined movement+jump tests still use trajectory metrics
 and require a preregistered independent visual ground-contact detector if event
 timing is scored. Record detector uncertainty; ambiguous events are inconclusive.
 
+Freeze each scenario's full observation window, including the pre-input baseline
+and post-release interval, using development-only calibration. It must include
+reference landing and its 100 ms confirmation interval for jump event scoring.
+If valid visible reference events occur but the candidate never departs or lands
+within that window, fail the behavior trial. If reference events are absent or
+capture/detector evidence is insufficient, mark it unscorable and record why.
+Never truncate a failed candidate trajectory to its matching prefix.
+
 ## Repetitions and failures
+
+Before candidate scoring, check reference-only repeatability with five reset runs
+per scenario, including private final scenarios within the evaluator boundary.
+Compare each of the last four runs with the first using the frozen observables,
+alignment and tolerances; all four must pass. Preserve all measurements. This is
+a reference-stability gate, not a reconstruction score. If valid reference runs
+fail this gate, mark that scenario inconclusive and report fixture variability;
+do not tune the candidate to unstable evidence. Apply the same capture gates and
+seven-attempt cap to obtaining these five valid reference runs. Only development
+reference calibration may inform protocol changes before the final freeze.
 
 Run five valid reference/candidate pairs per scenario from reset. Each scenario
 passes only if at least four of five pairs pass every required metric. Report all

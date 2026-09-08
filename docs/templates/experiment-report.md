@@ -21,6 +21,8 @@ recorded and final groups separately, including every failed or unscorable trial
 - Appearance assessment (does not replace behavior scores):
 - Collection/infrastructure failures, timing quality and retry eligibility:
 - Incorrect inferences and supporting/counter-evidence:
+- Reference-only stability results and unscorable scenarios:
+- Evidence-backed specification coverage for each required recovered behavior:
 - Reconstruction errors tied to specification IDs:
 - Generator additions and defaults (never scored as recovered facts):
 - Unidentified parameters, unobserved branches and uncertainty:
