@@ -14,6 +14,7 @@ Requires Node.js 22+, npm, Google Chrome, and Docker for isolated workers.
 npm ci --ignore-scripts
 docker pull node:24-alpine
 npm test
+npm run test:browser
 npm run serve
 # Open http://127.0.0.1:4173; drag to aim, WASD to move, Space to jump, R to reset.
 ```
@@ -29,6 +30,12 @@ Each ID must be new. Experiments retain raw frames and evidence under
 PNGs. Docker workers have no network or reference-repository mount. Their image
 is resolved to an immutable local ID and recorded; missing images cause an error,
 not an automatic download or model fallback.
+
+Keep previous experiment directories: their frozen final-case files prevent reuse
+of consumed evaluation data. Run one experiment at a time. Ctrl-C preserves a
+partial report and cleans up owned resources. The CI configuration is provided as
+[an installation example](docs/ci-checks.example.yml); CI is not enabled because
+the current GitHub credential cannot add workflows.
 
 - [Vision](https://github.com/takahirox/gameparse/issues/1)
 - [Initial experiment contract](docs/initial-experiment.md)

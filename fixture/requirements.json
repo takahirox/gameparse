@@ -1,14 +1,41 @@
 {
   "condition": "controlled-clock-image-only-v1",
   "viewport": { "width": 1280, "height": 720 },
-  "camera": { "height": 1.6, "focalPixels": 620, "initialPosition": [0, 1.6, 0], "initialYaw": 0, "initialPitch": 0 },
+  "camera": {
+    "height": 1.6,
+    "focalPixels": 620,
+    "initialPosition": [0, 1.6, 0],
+    "initialYaw": 0,
+    "initialPitch": 0
+  },
   "landmarks": [
     { "id": "cyan", "position": [-4, 1, 16], "rgb": [0, 255, 255] },
     { "id": "magenta", "position": [4, 2.8, 18], "rgb": [255, 0, 255] },
     { "id": "yellow", "position": [0, 4, 22], "rgb": [255, 255, 0] },
     { "id": "orange", "position": [-2, 5, 20], "rgb": [255, 128, 0] }
   ],
-  "controls": { "forward": "w", "backward": "s", "left": "a", "right": "d", "jump": "Space", "reset": "r", "aim": "drag with left mouse button; optional double-click pointer lock for manual play" },
-  "suppliedFacts": ["viewport", "camera projection and initial pose", "landmark geometry and colors", "control bindings", "flat ground"],
-  "unknowns": ["movement rate", "mouse response", "jump impulse", "vertical acceleration", "simultaneous-input normalization", "unobserved actions"]
+  "controls": {
+    "forward": "w",
+    "backward": "s",
+    "left": "a",
+    "right": "d",
+    "jump": "Space",
+    "reset": "r",
+    "aim": "drag with left mouse button; optional double-click pointer lock for manual play"
+  },
+  "suppliedFacts": [
+    "viewport",
+    "camera projection and initial pose",
+    "landmark geometry and colors",
+    "control bindings",
+    "flat ground"
+  ],
+  "unknowns": [
+    "movement rate",
+    "mouse response",
+    "jump impulse",
+    "vertical acceleration",
+    "simultaneous-input normalization",
+    "unobserved actions"
+  ]
 }

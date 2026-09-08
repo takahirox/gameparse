@@ -10,6 +10,10 @@ scheduled inputs, and records a PNG before advancing again. Virtual time and
 wall-clock capture/input round-trip durations are recorded separately. Virtual
 sampling is 62.5 Hz; screenshots may take longer in real time without advancing
 the game. No engine state, pose telemetry, or source is supplied to the analyzer.
+An input-only page listener records trusted DOM key/mouse receipts on that clock,
+including actual relative mouse deltas; these must match prescribed inputs.
+DOM receipt is evidence of delivery, not proof of in-game consumption. Screenshots
+and input acknowledgments are checked against the frozen virtual clock.
 
 The capture modality is left-button dragging with relative mouse events and no
 pointer lock. macOS Chrome rejected pointer lock in our preflight checks, including
@@ -60,12 +64,27 @@ the source file is not mounted into either worker. Case contents are sampled and
 hashed after generation, before scoring. Final feedback is not supplied to the
 workers. Once reported, these cases are consumed.
 
+The runner scans previously frozen case files under `artifacts/` and excludes
+their exact input sequences, including runs that did not finish. A new seed is
+not sufficient. Do not delete or move that history to obtain a new final claim.
+The finite case pools eventually exhaust; the runner then stops and requires a
+new preregistered condition. Separate installations must carry the consumed-case
+history forward. Concurrent experiments in the same workspace are unsupported.
+
 `artifacts/<id>/` retains preregistration, input/frame recordings, measurements,
 specification, worker input/tool/output manifests, boundary probes, reconstruction,
 private cases, immutable freeze metadata, individual trial scores and a report.
 Failed preflight runs are kept under their own IDs. Raw artifacts are ignored by
 Git to avoid repeatedly committing thousands of PNGs; the experiment report must
 state their retained location and the limits of any published evidence subset.
+
+The final freeze covers coordinator/evaluator source, worker tools, the fixture,
+protocol and condition documents, dependency lockfile, exact stage inputs/outputs,
+audit records, plan and final cases. All identities are rechecked after scoring.
+Cancellation preserves an incomplete report and terminates owned browser contexts,
+servers and worker containers; it never retries a cancelled trial. Collected game
+runtime exceptions are behavior failures for the candidate and invalid reference
+evidence for the reference, separately from collection failures.
 
 The fixed protocol is implemented incrementally. A result must state unsupported
 conditions and any deviations explicitly; passing unit tests is not a recovery
