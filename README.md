@@ -48,6 +48,7 @@ the current GitHub credential cannot add workflows.
 - [Experiment report template](docs/templates/experiment-report.md)
 - [Controlled-clock condition and limitations](docs/experiments/controlled-clock.md)
 - [First experiment results and evidence](docs/experiments/first-result.md)
+- [Development flow](docs/development-flow.md) and [review guidelines](docs/review-guidelines.md)
 
 To try the committed reconstruction without rerunning the experiment:
 
