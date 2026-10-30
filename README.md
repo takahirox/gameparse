@@ -58,3 +58,17 @@ node src/cli.mjs serve --dir examples/controlled-clock-reconstruction
 
 Implementations must satisfy the protocol's isolation and evaluation gates
 before their results can be counted as an experiment under this contract.
+
+## UI/UX
+
+Apply these principles to CLI commands and messages, documentation examples,
+the playable browser fixture and reconstruction examples, and any future graphical
+interface:
+
+1. **Keep it simple.** Show only necessary information and actions; avoid unnecessary UI elements.
+2. **Show, don't tell.** Prefer layout, spacing and visual hierarchy over explanatory labels or prose to communicate structure.
+3. **Intuitive and predictable.** Keep appearance and behavior consistent with user expectations; don't interrupt the user's work.
+
+Preserve necessary control labels, accessible names, error messages, and information
+needed to use the interface. Simplification must preserve meaningful consent,
+destructive-action safeguards, and necessary warnings.
