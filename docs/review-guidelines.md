@@ -49,6 +49,8 @@ Also verify the ordinary quality of the change:
 - validation is sufficient for the change
 - documentation is updated when the change affects documented behavior
 
+Review applicable interface changes against the [UI/UX principles](../README.md#uiux).
+
 ## Check Validation Timing
 
 Follow the [development flow](development-flow.md#1-start-with-an-issue): mandatory pre-merge acceptance criteria must be achievable and verifiable before merge. Checks possible only after merge must not be prerequisites for pre-merge PR approval.
