@@ -51,6 +51,12 @@ Also verify the ordinary quality of the change:
 
 Review applicable interface changes against the [UI/UX principles](../README.md#uiux).
 
+## Check Validation Value and Cost
+
+Apply the [testing and CI principles](development-flow.md#testing-and-ci-principles): identify additional defect coverage, overlap with existing checks, and added execution and maintenance cost while preserving required regressions and integration confidence.
+
+> Does this change provide sufficient confidence with the lightest appropriate validation, without redundant execution?
+
 ## Check Validation Timing
 
 Follow the [development flow](development-flow.md#1-start-with-an-issue): mandatory pre-merge acceptance criteria must be achievable and verifiable before merge. Checks possible only after merge must not be prerequisites for pre-merge PR approval.
