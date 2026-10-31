@@ -2,6 +2,8 @@
 
 This document defines the default development flow for gameparse, with particular emphasis on AI-assisted development.
 
+Use the [testing and CI principles](#testing-and-ci-principles) when choosing validation and reviewing its cost.
+
 ## 1. Start with an Issue
 
 Work should begin with an Issue.
@@ -89,3 +91,27 @@ Merge
   ↓
 Post-merge verification (if required)
 ```
+
+## Testing and CI Principles
+
+**Detect the required failures at the lightest appropriate layer, without redundant execution.** Preserve required correctness, regressions, and meaningful integration coverage when moving or consolidating checks.
+
+Current checks are `npm test` (Node's test runner over `test/*.test.mjs`, including evaluation, vision, evidence validation, and server boundaries) and `npm run test:browser` (real-Chrome capture/reset, input delivery, evidence integrity, and cancellation/cleanup). Full experiments use Chrome and isolated Docker workers under the [initial experiment contract](initial-experiment.md) and [controlled-clock condition](experiments/controlled-clock.md); passing unit tests alone does not establish an experiment result. There is no build script or active CI workflow. The [CI installation example](ci-checks.example.yml) runs `npm test` and `git diff --check`, not browser tests or experiments.
+
+1. **Prefer the lightest meaningful layer.** Test calculations, branches, and broad input combinations in Node where possible. Reserve Chrome capture/rendering and Docker-backed experiments for behavior and isolation boundaries that require them. Each test should catch a concrete defect rather than mirror implementation details.
+2. **Choose combinations deliberately.** Select representative movement, aiming, jumping, recording-validity, and failure cases covering distinct paths. Expand combinations of scenarios, clock/input conditions, browsers, or future model adapters only where interactions warrant it. Preserve required regressions and the contract's scenarios, repetitions, thresholds, fresh browser contexts, and resets; reducing duplicate work must not weaken experiment evidence.
+3. **Match validation to the change.** Use the guidance below for fast feedback and applicable pre-merge regression validation. Keep deployment/publication verification possible only after merge separate and pending under the [validation timing rules](review-guidelines.md#check-validation-timing). Additional exploratory checks are optional unless the Issue or applicable contract requires them; do not defer achievable mandatory checks until after merge.
+4. **Reuse work and avoid duplicate execution.** Reuse dependency downloads, worker images, and permitted fixture preparation with keys reflecting dependencies, tool versions, and inputs, while preserving isolation and frozen identities. Never reuse consumed final cases or discard their history. Run one experiment at a time as required by the condition. If CI is installed, avoid equivalent push/PR runs for the same revision and cancel superseded validation when safe; preserve necessary deployment ordering. Parallelize independent work only with measured resource use, not an assumption that more workers help.
+5. **Review coverage and cost together.** Identify the additional defect each new or expanded check detects, whether existing coverage already provides that assurance, and its execution and maintenance cost. Watch repeated Chrome/container startup, PNG capture and large fixtures, long capture/evaluation loops, and Cartesian-product growth. Retain meaningful assertions when consolidating checks.
+6. **Maintain an evidence-based execution-time budget.** Normal-CI timing is currently unmeasured and no target is established. The example's five-minute timeout is a safety limit, not a measured baseline or performance target. During actual test/CI performance work, establish a representative baseline and target, monitor growth, and investigate overruns by revisiting setup, duplication, and validation layers. Track elapsed feedback time, total runner/computation time, and queue time separately. This guidance adds no benchmark, hardware, or merge gate.
+
+Choose applicable checks before merge and report what ran:
+
+| Change | Applicable validation |
+| --- | --- |
+| Documentation only | Check Markdown structure, links/anchors, command consistency, and `git diff --check`; application tests, browser runs, and experiments are not required solely for prose changes. |
+| UI: CLI/messages, playable fixture, or reconstruction | Check affected user-facing behavior and [UI/UX principles](../README.md#uiux); use Node tests for CLI logic and Chrome checks for affected rendered/input behavior. |
+| Core/runtime, evaluation, or isolation | Run `npm test` for regression coverage; run `npm run test:browser` for affected capture, browser, or cleanup boundaries, and contract-required experiment validation for changed experiment claims. |
+| CI/build/dependency setup | Validate affected configuration and commands, including applicable regression checks; the inactive example is not evidence of an executed workflow. No build command is currently configured. |
+
+The Issue's mandatory pre-merge criteria and applicable experiment requirements still apply. Report optional validation and genuinely post-merge-only verification separately. Changes to tests, triggers, caches, workers, or application behavior belong in separately scoped implementation work.
