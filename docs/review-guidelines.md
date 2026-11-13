@@ -20,7 +20,7 @@ Verify that the Pull Request addresses all parts of the Issue that it claims to 
 
 Do not approve a Pull Request as closing an Issue when important requirements remain unimplemented.
 
-If the change is intentionally partial, the Pull Request should say so and the Issue should remain open.
+If the change is intentionally partial, the Pull Request should state its remaining scope, use a non-closing Issue reference, and leave the parent Issue open.
 
 Required post-merge verification recorded as pending is separate from missing implementation. Do not treat it as partial implementation or claim the outcome is fully verified before those checks are performed.
 
@@ -65,6 +65,10 @@ For example, for a merge-triggered deployment, review the code and configuration
 
 Ensure required post-merge verification is recorded separately in the Issue and Pull Request and reported as pending until performed. Review the actual pre-merge validation evidence; this separation does not waive implementation requirements or applicable pre-merge tests. Do not accept claims that unperformed checks passed.
 
+For a fully implemented Issue with applicable mandatory pre-merge acceptance satisfied, preserve `Closes #N`. Do not request its removal, require keeping the source Issue open, or withhold approval solely because post-merge-only verification is pending. ProjectWeave publication adds this reference and its merge/close stages close the Issue; reversing that lifecycle in review causes repeated Review -> Fix -> Publish -> Review loops.
+
+Missing implementation, mandatory pre-merge tests, required protections, and genuinely necessary pre-merge human acceptance remain blockers. Require post-merge checks only where the actual change needs them; use the [documentation-only validation scope](development-flow.md#testing-and-ci-principles) for prose changes.
+
 ## Review Outcome
 
 A Pull Request is ready to merge when:
@@ -76,4 +80,4 @@ A Pull Request is ready to merge when:
 
 If any of these conditions are not met, request changes and review again after revision.
 
-Required post-merge checks may remain pending at approval. After merge, record their actual results and evidence as described in the [post-merge verification step](development-flow.md#6-perform-post-merge-verification).
+Required post-merge checks may remain pending at approval. Merge and close the fully implemented source Issue, then follow the [post-merge verification step](development-flow.md#6-perform-post-merge-verification) for accurate evidence and new linked Issues for actual defects, checking for equivalent Issues first. Do not reopen the source Issue solely for this follow-up; closure is not evidence that pending checks passed.

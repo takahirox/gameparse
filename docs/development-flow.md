@@ -22,6 +22,8 @@ When human work is required, state why it is necessary and what result is expect
 
 Mandatory pre-merge acceptance criteria must be achievable and verifiable before merge. Record required verification possible only after merge separately in the Issue; it must not be a prerequisite for pre-merge PR approval. This separation does not waive implementation requirements or applicable pre-merge tests.
 
+Require post-merge verification only when the actual change needs it; otherwise state that none is required. Documentation-only changes need the documentation checks below, not routine manual approval, physical-device testing, heavyweight model downloads, or deployment gates.
+
 For example, when deployment is triggered by merge, validate the code and configuration, local builds, and applicable automated tests before merge. Verify successful publication and the newly published site after merge, reporting those checks as pending until performed.
 
 For experiment changes, the [initial experiment contract](initial-experiment.md) and the applicable preregistered condition's acceptance requirements still apply. Do not claim unperformed checks passed.
@@ -39,9 +41,9 @@ The Pull Request should explain:
 
 Report pre-merge validation results and required post-merge verification separately. Keep post-merge checks marked pending until performed, and report their actual results afterward. Do not present pending verification as passed or the outcome as fully verified.
 
-A Pull Request should only claim to close an Issue when it fully addresses that Issue.
+A Pull Request that fully implements the Issue and satisfies applicable mandatory pre-merge acceptance should use the normal `Closes #N` reference. Pending post-merge-only verification does not make that implementation partial or prevent closure after successful merge.
 
-If the Pull Request intentionally implements only part of the Issue, it should state that clearly and should not present the Issue as fully resolved.
+If the Pull Request intentionally implements only part of the Issue, state the remaining scope and use a non-closing reference such as `Refs #N`; do not automatically close the parent Issue.
 
 ## 3. Review Before Merge
 
@@ -68,11 +70,15 @@ The Pull Request should be merged only when the reviewed change is an appropriat
 
 ## 5. Merge
 
-After review passes, merge the Pull Request.
+After review passes and required protections are satisfied, merge the Pull Request and close the fully implemented source Issue, normally through `Closes #N`. Closure does not claim that pending, unperformed, or environment-blocked post-merge checks passed.
 
 ## 6. Perform Post-Merge Verification
 
-Perform the required post-merge checks recorded in the Issue and Pull Request, then update their pending status with the actual results and evidence. If a check fails or cannot be performed, report that status accurately and track the remaining work.
+Perform genuinely required post-merge checks recorded in the Issue and Pull Request after merge and closure. Record actual results and evidence in the merged PR, closed Issue, or a linked validation report, identifying the checked revision, checks performed, and evidence location. Report unperformed, pending, failed, or environment-blocked checks accurately, including blockers and remaining verification; an unavailable test environment alone is not evidence of a product defect.
+
+If verification reveals an actual defect, first check for an existing equivalent Issue. Use that Issue or create a new one with reproduction steps, the affected revision, expected and actual behavior, and links to the original Issue and PR. Do not reopen the original Issue solely for post-merge follow-up.
+
+This lifecycle supersedes older instructions to keep a fully implemented Issue open solely for post-merge verification. Preserve historical test outcomes and evidence as recorded; the lifecycle does not retroactively change results or existing verification requirements.
 
 The normal flow is therefore:
 
@@ -87,7 +93,7 @@ Review
   ↓
 Revision if needed
   ↓
-Merge
+Merge and close the fully implemented Issue
   ↓
 Post-merge verification (if required)
 ```
