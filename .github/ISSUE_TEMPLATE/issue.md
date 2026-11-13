@@ -24,10 +24,12 @@ For a merge-triggered deployment, validate the code and configuration, local bui
 
 ## Post-merge verification
 
-Record required checks possible only after merge separately, or state that none are required. These checks must not be prerequisites for pre-merge PR approval. Report each as pending until performed; do not claim unperformed checks passed.
+Record checks possible only after merge that the actual change requires, or state that none are required. Their pending status must not block pre-merge PR approval or closure of a fully implemented Issue after successful merge. Report each as pending until performed; do not claim unperformed or environment-blocked checks passed.
 
-For a merge-triggered deployment, verify successful publication and the newly published site after merge. This separation does not waive implementation requirements or applicable pre-merge tests. See the [review guidelines](https://github.com/takahirox/gameparse/blob/main/docs/review-guidelines.md#check-validation-timing).
+For a merge-triggered deployment, verify successful publication and the newly published site after merge. Follow the [merge/closure and evidence lifecycle](https://github.com/takahirox/gameparse/blob/main/docs/development-flow.md#5-merge), including new linked Issues for actual defects. Documentation-only changes do not need deployment or model runs solely for prose edits.
 
 ## Context
 
 Add any relevant context, examples, logs, or related issues.
+
+For a defect found after merge, check for an existing equivalent Issue first. Include reproduction steps, affected revision, expected/actual behavior, and links to the original Issue and PR. An unavailable test environment alone is not a product defect.
